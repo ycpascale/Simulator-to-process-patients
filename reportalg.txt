@@ -1,0 +1,91 @@
+1. Client ID: Hi
+Initial priority: 1, Final priority: 1
+Symptom Code: CV
+Arrival Time: 0
+Time Per Client: 0
+
+2. Client ID: Bob
+Initial priority: 1, Final priority: 1
+Symptom Code: NC
+Arrival Time: 0
+Time Per Client: 0
+
+3. Client ID: Hey
+Initial priority: 1, Final priority: 1
+Symptom Code: CV
+Arrival Time: 0
+Time Per Client: 0
+
+4. Client ID: Arushi
+Initial priority: 2, Final priority: 1
+Symptom Code: RC
+Arrival Time: 0
+Time Per Client: 0
+
+5. Client ID: Kim
+Initial priority: 2, Final priority: 1
+Symptom Code: NC
+Arrival Time: 0
+Time Per Client: 0
+
+6. Client ID: Jimmy
+Initial priority: 1, Final priority: 1
+Symptom Code: HN
+Arrival Time: 0
+Time Per Client: 0
+
+7. Client ID: Wow
+Initial priority: 3, Final priority: 1
+Symptom Code: HN
+Arrival Time: 0
+Time Per Client: 0
+
+8. Client ID: H123
+Initial priority: 3, Final priority: 1
+Symptom Code: TR
+Arrival Time: 0
+Time Per Client: 0
+
+9. Client ID: Ana
+Initial priority: 1, Final priority: 1
+Symptom Code: RC
+Arrival Time: 0
+Time Per Client: 0
+
+10. Client ID: Mary3
+Initial priority: 1, Final priority: 1
+Symptom Code: TR
+Arrival Time: 0
+Time Per Client: 0
+
+11. Client ID: Meas
+Initial priority: 2, Final priority: 1
+Symptom Code: HN
+Arrival Time: 0
+Time Per Client: 0
+
+12. Client ID: abc
+Initial priority: 4, Final priority: 2
+Symptom Code: CV
+Arrival Time: 0
+Time Per Client: 0
+
+13. Client ID: fuck
+Initial priority: 5, Final priority: 2
+Symptom Code: TR
+Arrival Time: 0
+Time Per Client: 0
+
+14. Client ID: myG
+Initial priority: 3, Final priority: 2
+Symptom Code: RC
+Arrival Time: 0
+Time Per Client: 0
+
+15. Client ID: de
+Initial priority: 5, Final priority: 3
+Symptom Code: HN
+Arrival Time: 0
+Time Per Client: 0
+
+Total time spend: 0

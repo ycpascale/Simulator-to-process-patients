@@ -1,0 +1,86 @@
+****************************************************
+Pascale Young Choang		    0985717
+The class name		The assignment name/number
+The date			wyoungch@mail.uoguelph.ca
+****************************************************
+
+
+************************
+Program Description
+**************************
+This program implements the use of a priority which is implemented by using a heap.
+
+
+************
+Compilation
+************
+ To compile this code(with addition):
+ run: make
+
+ To compile the program with no addition:
+ run: make noextra
+
+  Detailed Make options:
+
+  make  runs the cppcheck option
+  make prog  compiles the main2.c program with the library
+  make test compiles the main1.c program with the library
+  make doxy creates the doxygen documentation in the docs subdirectory
+  make clean removes executable files
+
+****************************
+Known Limitations, Issues and Errors
+****************************
+Seg fault when # of clients is large in data file?? :()
+
+*********************************
+main1.c is the program without the addition and the starvation alg is implemented.
+main2.c is the program with the addition. I chose addition #2.
+
+report1.txt and report11.txt are reports from the running the main2.c and main1.c respectively
+for the data1.txt
+So basically, all reports with 1 num (e.g report2.txt) are from the program with addition
+and reports with 2 nums (e.g report22.txt) are run with the base simulation
+
+Now to show testing for the starvation algorithm, I used my base simulation with the data1.txt
+So reportalg.txt is generated with the algorithm implemented and reportnoalg.txt without
+implementing it(I had to comment that part to be able to do that)
+
+Explanation for Starvation Alg: (based on fixed-priority pre-emptive scheduling)
+
+https://en.wikipedia.org/wiki/Aging_%28scheduling%29
+
+I implemented an algorithm which will decrease the priority of all the
+clients except those who already have a priority 1. And this is done
+after deleting twice the roots.
+
+From the results obtained, we can see in reportnoalg.txt that the clients are.
+removed by lowest priority to highest.
+However, in reportalg.txt, not all the priotities of order 1 are removed.
+That is, 3 clients of priority 1 is removed then 3 clients of priority 2 is removed and so on
+but as we can see in the reportnoalg.txt, all 6 clients of priority 1 are removed first.
+
+I think this algorithm is okay but might work better if the number of clients were larger
+but since I am using a smaller # of clients, those of higher priorities like 4 and 5
+take some time before coming to the top.
+
+Explanation on additons part:
+
+So first, the data is read from the file and loaded in an array of structs
+Then loop through the array, and generate a random time and assign it to the arrival time.
+
+The simulation clocks starts at 1 and is incremented by 1.
+For each interval, loop through the array to find a matching arrival time to
+the clock then insert it into the queue.
+
+After an interval of 3,(start at time 3, 6, 9), I assuming that the patient
+at the top gets to see the doctor, so I remove that patient from the priority
+queue.
+
+Assumptions:
+Total time spent is the total time taken for all the patients to be treated
+time per client is the time he waited in the queue before being removed
+
+Note: Everytime a report is generated from main2.c using the same
+data input file, the order at which the patients will not be the same
+since it depends on the arrival time of the patients.

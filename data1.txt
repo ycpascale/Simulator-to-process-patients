@@ -1,0 +1,15 @@
+Hey 1 CV
+Mary3 1 TR
+Jimmy 1 HN
+Bob 1 NC
+Ana 1 RC
+Hi 1 CV
+Meas 2 HN
+Arushi 2 RC
+Kim 2 NC
+Wow 3 HN
+H123 3 TR
+myG 3 RC
+abc 4 CV
+de 5 HN
+fuck 5 TR
